@@ -266,7 +266,7 @@ public class tambahTugas extends javax.swing.JFrame {
             con = DriverManager.getConnection("jdbc:mysql://localhost/manajemen_tugas", "root", "");
             pst = con.prepareStatement("INSERT INTO tugas (judul, deskripsi, deadline, prioritas) VALUES (?, ?, ?, ?)");
             pst.setString(1, judulTugas);
-            pst.setString(2, deskripsiTugas);
+            pst.setString(2, deskripsiTugas);   
             pst.setString(3, deadline);
             pst.setString(4, prioritasTugas);
             pst.executeUpdate();

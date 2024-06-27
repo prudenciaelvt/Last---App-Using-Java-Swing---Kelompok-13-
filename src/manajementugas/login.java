@@ -72,7 +72,6 @@ public class login extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -180,7 +179,7 @@ public class login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 0, 450, 440));
 
-        setSize(new java.awt.Dimension(916, 438));
+        setSize(new java.awt.Dimension(930, 445));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

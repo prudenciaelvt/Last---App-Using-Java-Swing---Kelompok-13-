@@ -20,9 +20,13 @@ public class editTugas extends javax.swing.JFrame {
     /**
      * Creates new form main
      */
+    private final JDateChooser dateChooser1; // Deklarasi variabel
+
     public editTugas() {
         initComponents();
+        dateChooser1 = new JDateChooser(); // Inisialisasi variabel
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -33,7 +37,6 @@ public class editTugas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        dateChooser1 = new com.raven.datechooser.DateChooser();
         jPanel1 = new javax.swing.JPanel();
         txt_JudulTugas = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -51,12 +54,8 @@ public class editTugas extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         popUpDateChooser = new javax.swing.JLabel();
 
-        dateChooser1.setForeground(new java.awt.Color(252, 122, 16));
-        dateChooser1.setTextRefernce(txt_Date);
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
@@ -212,7 +211,7 @@ public class editTugas extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 920, 470));
         jPanel1.getAccessibleContext().setAccessibleDescription("");
 
-        setSize(new java.awt.Dimension(916, 465));
+        setSize(new java.awt.Dimension(930, 472));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -274,11 +273,9 @@ public class editTugas extends javax.swing.JFrame {
         }
            
         this.dispose(); // Menutup form login
-                java.awt.EventQueue.invokeLater(new Runnable() {
-                    public void run() {
-                        new main().setVisible(true); // Membuka Main
-                    }
-                });
+                java.awt.EventQueue.invokeLater(() -> {
+                    new main().setVisible(true); // Membuka Main
+        });
     }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
@@ -312,15 +309,12 @@ public class editTugas extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new editTugas().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new editTugas().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.raven.datechooser.DateChooser dateChooser1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -338,4 +332,24 @@ public class editTugas extends javax.swing.JFrame {
     private javax.swing.JTextField txt_DeskripsiTugas;
     private javax.swing.JTextField txt_JudulTugas;
     // End of variables declaration//GEN-END:variables
+
+    private static class dateChooser1 {
+
+        private static void showPopup() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        public dateChooser1() {
+        }
+    }
+
+    private static class JDateChooser {
+
+        public JDateChooser() {
+        }
+
+        private void showPopup() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
 }

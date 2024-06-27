@@ -114,11 +114,11 @@ public class DatabaseManager {
 
             while (rs.next()) {
                 Vector<Object> row = new Vector<>();
-                row.add(rs.getInt("id"));
                 row.add(rs.getString("judul"));
                 row.add(rs.getString("deskripsi"));
                 row.add(rs.getDate("deadline"));
                 row.add(rs.getString("prioritas"));
+                row.add(rs.getInt("ID_tugas"));
                 model.addRow(row);
             }
         } catch (SQLException e) {
